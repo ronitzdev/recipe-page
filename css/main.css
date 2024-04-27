@@ -5,6 +5,7 @@
   --light-grey: hsl(30, 18%, 87%); /* */
   --time-raspberry: hsl(332, 51%, 32%); /* preparation - li */
   --time-raspberry2: rgba(123, 40, 79, 0.032);
+  --time-raspberry3: rgba(123, 40, 79, 0.116);
   --item-dark: hsl(24, 5%, 18%); /* span */
   --item-gray: hsla(15, 4%, 18%, 0.815); /* span */
   --paragraph-gray: hsl(30, 10%, 34%); /* p */
@@ -36,6 +37,10 @@ body {
 3. Tipografía
 4. Estilos visuales
 */
+figure {
+  width: 100%;
+  text-align: center;
+}
 .img {
   position: relative;
   width: 100%;
@@ -199,4 +204,22 @@ table tr:nth-of-type(2) {
 }
 table tr:last-child td {
   border-top: 0.1px solid rgb(207, 207, 207);
+}
+
+@media (min-width: 800px) {
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--time-raspberry3);
+  }
+  main {
+    padding: 50px;
+    margin: 70px 0;
+    border-radius: 30px;
+    background-color: white;
+  }
+  img {
+    border-radius: 30px;
+    max-width: 800px;
+  }
 }
