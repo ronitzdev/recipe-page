@@ -172,7 +172,31 @@ hr {
 .instructions .paragraph > span::after {
   content: " ";
 }
-.mas {
-  position: relative;
-  height: 500px;
+
+.table__container {
+  margin: 3rem 4rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td {
+  padding: 10px; /* Padding interno */
+  width: 50%; /* Ancho de las columnas */
+}
+
+table tr > td:nth-of-type(2) {
+  color: var(--titles-nutmeg);
+  font-weight: 700;
+}
+
+table tr:first-child {
+  border-bottom: 0.1px solid rgb(207, 207, 207);
+}
+table tr:nth-of-type(2) {
+  border-bottom: 0.1px solid rgb(207, 207, 207);
+}
+table tr:last-child td {
+  border-top: 0.1px solid rgb(207, 207, 207);
 }
