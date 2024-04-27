@@ -1,0 +1,178 @@
+:root {
+  --white: hsl(0, 0%, 100%); /* */
+  --rose-white: hsl(330, 100%, 98%); /* */
+  --eggshell: hsl(30, 54%, 90%); /* */
+  --light-grey: hsl(30, 18%, 87%); /* */
+  --time-raspberry: hsl(332, 51%, 32%); /* preparation - li */
+  --time-raspberry2: rgba(123, 40, 79, 0.032);
+  --item-dark: hsl(24, 5%, 18%); /* span */
+  --item-gray: hsla(15, 4%, 18%, 0.815); /* span */
+  --paragraph-gray: hsl(30, 10%, 34%); /* p */
+  --titles-nutmeg: hsl(14, 45%, 36%); /* h2 - li - td[2] */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html,
+body {
+  height: auto;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  min-width: 320px;
+  font-size: 1.6rem;
+  text-align: left;
+}
+/* -------------------------------------------------------------- */
+/*
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografía
+4. Estilos visuales
+*/
+.img {
+  position: relative;
+  width: 100%;
+}
+.main {
+  position: relative;
+  width: 100%;
+}
+#main__title {
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center;
+  font-family: "Young Serif", serif;
+  font-size: 3.3rem;
+  line-height: 1.1;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--item-dark);
+}
+
+.paragraph {
+  padding: 0 4rem;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--paragraph-gray);
+}
+
+.paragraph--display {
+  display: flex;
+  align-items: center;
+}
+.paragraph--padding {
+  padding-bottom: 3rem;
+}
+
+/* preparation */
+
+.preparation {
+  background-color: var(--time-raspberry2);
+  margin: 0 4rem;
+  padding: 2rem 2rem;
+  height: 170px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.preparation__title {
+  color: var(--time-raspberry);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding-top: 1rem;
+}
+.preparation__list {
+  padding: 1rem;
+  list-style: none;
+}
+.preparation__item {
+  display: flex;
+  padding-bottom: 10px;
+  color: var(--paragraph-gray);
+}
+.preparation__item::before {
+  content: "•"; /* Agrega el símbolo de viñeta antes de cada ítem */
+  margin-right: 20px; /* Ajusta el espacio entre la viñeta y el texto del ítem */
+  margin-left: 5px;
+  color: var(
+    --time-raspberry
+  ); /* Cambia el color de la viñeta si es necesario */
+}
+.space {
+  color: var(--item-dark);
+  font-weight: 600;
+}
+.space::after {
+  content: " ";
+}
+h2 {
+  margin: 0 4rem;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--titles-nutmeg);
+  padding: 2rem 0;
+}
+.list__ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.list__ingredients li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list__ingredients p::before {
+  content: "•"; /* Agrega el símbolo de viñeta antes de cada ítem */
+  margin-right: 20px; /* Ajusta el espacio entre la viñeta y el texto del ítem */
+  margin-left: 5px;
+  color: var(
+    --titles-nutmeg
+  ); /* Cambia el color de la viñeta si es necesario */
+}
+
+hr {
+  margin: 3rem 4rem;
+  height: 0.1px;
+  border: none;
+  background-color: rgb(207, 207, 207);
+}
+
+.title--padding_top {
+  padding-top: 0;
+}
+/* instructions */
+.instructions {
+  padding: 0 6rem;
+}
+
+.instructions .paragraph {
+  padding: 0 0 1.5rem 2rem;
+}
+.instructions .paragraph > span {
+  color: var(--item-gray);
+  font-weight: bold;
+}
+.instructions .paragraph > span::after {
+  content: " ";
+}
+.mas {
+  position: relative;
+  height: 500px;
+}
