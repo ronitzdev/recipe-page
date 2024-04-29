@@ -53,7 +53,7 @@ figure {
   width: 100%;
   padding: 30px 40px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Young Serif", serif;
   font-size: 3.3rem;
   line-height: 1.1;
@@ -87,7 +87,7 @@ figure {
   background-color: var(--time-raspberry2);
   margin: 0 4rem;
   padding: 2rem 2rem;
-  height: 170px;
+
   border-radius: 7px;
   display: flex;
   flex-direction: column;
